@@ -1,0 +1,181 @@
+/* La partie déplacement objet */
+#container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#tournevis {
+    width: 60px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 2s linear;
+}
+
+#telephone {
+    width: 100px;
+    position: absolute;
+    right: 100px;
+    top:50%; 
+    transform: translateY(-50%);
+}
+
+/* Animation du tournevis vers le téléphone */
+@keyframes tournevisMouv {
+    0% { left: 70px;}
+    100% { left: calc(100% - 50px); }
+}
+
+
+
+.icon {
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+#message {
+    display: none;
+    font-size: 18px;
+    color: green;
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Conteneur principal */
+#media-wrapper {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 3px solid #007bff;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Diaporama */
+#Diaporama {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border:10px solid black;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Album */
+#album {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+#image-container img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border:10px solid black;
+
+}
+
+#thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumb {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.thumb:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* Formulaire */
+form {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form input {
+    width: 150px;
+    padding: 8px;
+    margin: 5px ,0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Récapitulatif */
+#recap {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+}

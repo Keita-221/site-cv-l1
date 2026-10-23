@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Mon CV">
+  <meta name="author" content="Ibrahima Keita ">
+  <meta name="keywords" content="Stage, L1 ISI, Brest">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../css/style_logo.css" type="text/css">
+  <link rel="stylesheet" href="../css/technicien.css" type="text/css">
+  <title>Ibrahima Keita-cv</title>
+</head>
+
+<body>
+  <div id="entete">
+    <a href="https://www.univ-brest.fr/" target="_blank"><img id="logo" src="../img/logoUBO.png" alt="Logo UBO"></a>
+  </div>
+  <div id="navigation">
+    <!-- Liens vers les autres pages du site -->
+    <ul>
+      <li><a href="../index.html">Présentation</a></li>
+      <li><a href="formation.html">Formation</a></li>
+      <li><a href="experience.html">Expérience</a></li>
+      <li><a href="Technicien.html">Réparation &amp; Déblocage Téléphone</a></li>
+    </ul>
+  </div>
+  <div id="sousnavigation">
+    <hr>
+  </div>
+  <div id="corps">
+    <h1>Bienvenue chez KEITA iRepair</h1>
+    <img src="../img/logo.jpg" alt="KEITA iRepair - Réparation &amp; Déblocage de téléphones" id="logo">
+    <h1>Contactez-nous</h1>
+    <div class="contact-info">
+      <p><strong>Email :</strong> <a href="mailto:keitaibrahima701@gmail.com">keitaibrahima701@gmail.com</a></p>
+    </div>
+    <p>
+      Nous sommes spécialisés dans la <strong>réparation</strong> et le <strong>déblocage</strong> de téléphones de
+      toutes marques.
+      Que ce soit pour un écran cassé, une batterie à changer, un problème de réseau ou un téléphone bloqué, nous avons
+      la solution pour vous.
+    </p>
+    <h2>📱 Nos services :</h2>
+    <ul>
+      <li>🔧 <strong>Réparation d'écrans</strong> (remplacement rapide et garanti)</li>
+      <li>🔋 <strong>Changement de batterie</strong> (prolongez la durée de vie de votre téléphone)</li>
+      <li>🔊 <strong>Réparation des haut-parleurs</strong> (son faible ou inexistant ? Nous réglons ça)</li>
+      <li>📶 <strong>Problèmes de réseau</strong> (difficulté à capter ? Nous avons la solution)</li>
+      <li>🔓 <strong>Déblocage de téléphones</strong> (tous les opérateurs, rapide et efficace)</li>
+      <li>🔑 <strong>Déblocage de comptes Google et iCloud</strong> (accès sécurisé à votre téléphone)</li>
+      <li>🛠 <strong>Diagnostic complet</strong> (identification des pannes pour une réparation rapide)</li>
+    </ul>
+    <p>
+      💡 <em>Utilisez notre outil de calcul pour estimer le coût de votre réparation en quelques clics !</em>
+      Cliquez sur le bouton ci-dessous pour commencer :
+    </p>
+    <h3>Estimation du coût de réparation/déblocage</h3>
+    <label>Type de service :</label>
+    <select id="service">
+      <option value="reparation">Réparation</option>
+      <option value="deblocage">Déblocage</option>
+    </select>
+    <label>Modèle du téléphone :</label>
+    <input type="text" id="modele" placeholder="Ex: iPhone 12, Samsung S21">
+    <label>Type de panne :</label>
+    <select id="panne">
+      <option value="ecran">Écran cassé</option>
+      <option value="batterie">Batterie à changer</option>
+      <option value="hautParleur">Problème de son</option>
+      <option value="reseau">Problème de réseau</option>
+      <option value="Compte Google">Frp Bypass(Probleme Compte Google)</option>
+      <option value="Compte Icloud">Probleme Compte Icloud</option>
+      <option value="Diagnostic">Diagnostic</option>
+      <option value="reseau">Problème de réseau</option>
+    </select>
+
+    <button onclick="calculerPrix()">Calculer</button>
+    <p id="resultat"></p>
+    <h4>🔧Réparation Téléphone</h4>
+    <div id="container">
+      <img id="telephone" src="../img/iphones.jpg" alt="Téléphone">
+      <img id="tournevis" src="../img/tounevis.png" alt="Tournevis">
+    </div>
+    <p id="message"><span class="icon">✅</span> Réparation en cours...</p>
+    <button onclick="demarrerReparation()">📱Réparer</button>
+    <h2>Nos services en images</h2>
+    <div id="Diaporama">
+      <div class="slides">
+        <img src="../img/repa1.jpg" alt="img1" style="width:100%">
+      </div>
+      <div class="slides">
+        <img src="../img/repa2.jpg" alt="img2" style="width:100%">
+      </div>
+      <div class="slides">
+        <img src="../img/repa3.jpg" alt="img3" style="width:100%">
+      </div>
+      <button onclick="showImage(-1)">Previous</button>
+      <button onclick="showImage(1)">Next</button>
+    </div>
+    <h2>Mon album </h2>
+    <div id="album">
+      <div id="image-container">
+        <img id="main" src="../img/repa1.jpg" alt="Grande image">
+      </div>
+      <div id="thumbnails">
+        <div class="separator"></div>
+        <button onclick="prevImage()">◀️</button>
+        <img class="thumb" src="../img/photo.jpg" onclick="selectImage(this)">
+        <img class="thumb" src="../img/photo5.jpg" onclick="selectImage(this)">
+        <img class="thumb" src="../img/photo3.jpg" onclick="selectImage(this)">
+        <img class="thumb" src="../img/photo4.jpg" onclick="selectImage(this)">
+        <img class="thumb" src="../img/photo6.jpg" onclick="selectImage(this)">
+        <button onclick="nextImage()">▶️</button>
+      </div>
+
+
+      <br>
+      <br>
+      <h7>📱 Formulaire de Réparation</h7>
+      <form id="repairForm">
+        <label>Nom du client : <input type="text" id="clientName"></label><br>
+        <label>Prénom : <input type="text" id="firstname"></label><br>
+        <label>Nom : <input type="text" id="lastname"></label><br>
+        <label>Code Postal : <input type="text" id="zipcode"></label><br>
+        <label>Adresse : <input type="text" id="address"></label><br>
+        <label>Email : <input type="text" id="email"></label><br>
+        <label>Modèle du téléphone : <input type="text" id="phoneModel"></label><br>
+        <label>Description du problème : <input type="text" id="description"></label><br>
+        <button type="button" onclick="validateForm()">Valider</button>
+        <button type="button" onclick="clearForm()">Clear</button>
+      </form>
+      <!-- Section pour afficher le récapitulatif -->
+      <div id="recap" class="hidden"></div>
+      <script src="../script/calculateur.js"></script>
+</body>
+
+</html>

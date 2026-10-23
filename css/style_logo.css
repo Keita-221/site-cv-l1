@@ -1,0 +1,25 @@
+body {
+        text-align: center;
+        padding: 20px;
+    }
+#logo {
+        display: block;
+        margin: 20px auto; /* Centre l’image horizontalement */
+        width: 200px; /* Ajuste la taille */
+        height: auto;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.contact-info {
+    margin-top: 20px;
+}
+.contact-info p {
+    font-size: 16px;
+}
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;}

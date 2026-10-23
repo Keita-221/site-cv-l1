@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'permanent_markerregular';
+    src: url('PermanentMarker-webfont.eot');
+    src: url('PermanentMarker-webfont.eot?#iefix') format('embedded-opentype'),
+            url('PermanentMarker-webfont.woff') format('woff'),
+            url('PermanentMarker-webfont.ttf') format('truetype'),
+            url('PermanentMarker-webfont.svg#permanent_markerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+h1 {
+    font-family:'permanent_markerregular';   
+    font-size:20pt;
+    color:red;    
+}
+
+h2 {
+    font-family:'permanent_markerregular';
+    font-size:16pt;
+    color:blue;       
+}
+
+body {
+    background: url("../img/full-bloom.png") fixed repeat top left;
+    display:flex;
+    flex-direction:column;    
+    align-items:center;   
+}
+
+#navigation {
+    width: 100%;
+}
+    
+#navigation ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: 'permanent_markerregular';
+}
+
+#navigation a {
+    text-decoration:none;
+    color:grey;
+}
+
+#logo {
+    width: 100px;
+}
+
+#sousnavigation {
+    width:100%;
+    margin-bottom:5px;
+}
+
+#corps {
+    width:65%;
+    display:flex;
+    flex-direction:column;
+}
+
+#contenu {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    border:1px solid grey;
+    background-color:#C0C0C0;
+}
+
+#gauche {
+    text-align:center;
+    padding:2%;
+}
+
+#milieu {
+    padding:2%;
+}
+
+#droite {
+    padding:2%;
+}
